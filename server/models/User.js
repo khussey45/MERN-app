@@ -18,11 +18,11 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: true,
       max: 50,
-      unique: true
+      unique: true,
     },
     password: {
       type: String,
-      require: true,
+      required: true,
       min: 5,
     },
     picturePath: {
@@ -31,15 +31,15 @@ const UserSchema = new mongoose.Schema(
     },
     friends: {
       type: Array,
-      default: []
+      default: [],
     },
     location: String,
     occupation: String,
     viewedProfile: Number,
-    impressions: Number
+    impressions: Number,
   },
-   {timestamps: true}
- );
+  { timestamps: true }
+);
 
- const User = mongoose.model("User", UserSchema);
- export default User;
+const User = mongoose.model("User", UserSchema);
+export default User;
