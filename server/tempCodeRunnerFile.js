@@ -1,2 +1,2 @@
 User.insertMany(users);
-    // Post.insertMany(posts);
+    Post.insertMany(posts);
